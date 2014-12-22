@@ -1,0 +1,85 @@
+@import "bootstrap.less";
+
+/*customize variants*/
+
+@border-radius-menu: 0px;
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+header{
+	
+}
+
+.barra-local{
+	
+	.nome-pagina{
+		.text-left;
+	}
+		
+	.migalha{
+		.text-right;		
+	}
+
+}
+
+footer{
+	.sessao-footer{
+		h4{
+			border-bottom: solid 1px;
+		}
+	}
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	
+	header{
+		.navbar-default {	
+		padding-top: 70px;
+		
+		.navbar-collapse{
+			.navbar-nav{
+				&>li{
+					margin: 0 3px;
+				}
+			}
+		}
+		
+		.container-fluid{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+		ul{
+			.navbar-form{
+				.input-group{
+					.form-control{
+						border-radius: @border-radius-menu;
+					}
+				}
+				button{
+					border-radius: @border-radius-menu;
+				}
+			}
+		}
+		
+	}
+		
+	} 
+}
+
+	footer{
+		.container-fluid{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { }
