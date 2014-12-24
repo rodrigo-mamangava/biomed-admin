@@ -11968,3 +11968,32 @@ REQUEST_URI=/biomed-admin/exame/create
 in C:\xampp\htdocs\biomed-admin\protected\views\exame\_form.php (39)
 in C:\xampp\htdocs\biomed-admin\protected\views\exame\create.php (18)
 in C:\xampp\htdocs\biomed-admin\protected\controllers\ExameController.php (79)
+2014/12/24 21:13:03 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDownListControlGroup".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\views\produto\_form.php(31): CComponent->__call('dropDownListCon...', Array)
+#1 C:\xampp\htdocs\biomed-admin\protected\views\produto\_form.php(31): CActiveForm->dropDownListControlGroup(Object(Produto), 'id_tipo', Array, Array)
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\biomed-admin\protected\views\produto\create.php(18): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\biomed-admin\protected\controllers\ProdutoController.php(79): CController->render('create', Array)
+#11 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): ProdutoController->actionCreate()
+#12 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/create')
+#22 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/biomed-admin/produto/create
+---

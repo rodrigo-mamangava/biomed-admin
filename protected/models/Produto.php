@@ -39,7 +39,7 @@ class Produto extends CActiveRecord
 		return array(
 			array('nome, resumo, descricao, foto_principal, id_tipo', 'required'),
 			array('id_tipo', 'numerical', 'integerOnly'=>true),
-			array('nome, resumo, descricao', 'length', 'max'=>45),
+			array('nome, resumo, descricao', 'length', 'max'=>1000),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, nome, resumo, descricao, foto_principal, id_tipo', 'safe', 'on'=>'search'),
@@ -72,9 +72,9 @@ class Produto extends CActiveRecord
 			'id' => 'ID',
 			'nome' => 'Nome',
 			'resumo' => 'Resumo',
-			'descricao' => 'Descricao',
-			'foto_principal' => 'Foto Principal',
-			'id_tipo' => 'Id Tipo',
+			'descricao' => 'Descrição',
+			'foto_principal' => 'Foto do produto',
+			'id_tipo' => 'Tipo de produto',
 		);
 	}
 

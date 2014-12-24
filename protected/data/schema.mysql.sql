@@ -30,7 +30,7 @@ CREATE TABLE `categoria` (
   `descricao` varchar(255) DEFAULT NULL,
   `tag` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +39,7 @@ CREATE TABLE `categoria` (
 
 LOCK TABLES `categoria` WRITE;
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
+INSERT INTO `categoria` VALUES (1,'Categoria 01','Descrição da categoria 01','cat01');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,7 +56,7 @@ CREATE TABLE `exame` (
   `url` text NOT NULL,
   `descricao` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +65,7 @@ CREATE TABLE `exame` (
 
 LOCK TABLES `exame` WRITE;
 /*!40000 ALTER TABLE `exame` DISABLE KEYS */;
-INSERT INTO `exame` VALUES (1,'Exame 01','catalogo.php',NULL),(2,'Exame 02','exame-02',NULL),(3,'Exame 03','exame-03',NULL),(4,'Encefalografia','encefalografia',NULL),(6,'Teste 05','teste-05','Descrição da página'),(7,'Teste 07','teste-07','Descrição da página');
+INSERT INTO `exame` VALUES (14,'Encefalografia','Encefalografia','Encefalografia'),(16,'Teste','asd','<br>');
 /*!40000 ALTER TABLE `exame` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -133,15 +134,15 @@ DROP TABLE IF EXISTS `produto`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `produto` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) NOT NULL,
-  `resumo` varchar(45) NOT NULL,
-  `descricao` varchar(45) NOT NULL,
+  `nome` int(11) NOT NULL,
+  `resumo` text NOT NULL,
+  `descricao` text NOT NULL,
   `foto_principal` text NOT NULL,
   `id_tipo` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_tipo_idx` (`id_tipo`),
   CONSTRAINT `id_tipo` FOREIGN KEY (`id_tipo`) REFERENCES `tipo` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -150,6 +151,7 @@ CREATE TABLE `produto` (
 
 LOCK TABLES `produto` WRITE;
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
+INSERT INTO `produto` VALUES (2,0,'aqui vai um resumo gigante','Ja aqui vai a descrição toda do produto','foto',1),(3,0,'Aqui vai o resumo do acessório','Aqui vai a descrição do acessório','Aqui vai a foto',2);
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -280,4 +282,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-24 14:17:25
+-- Dump completed on 2014-12-24 18:23:07

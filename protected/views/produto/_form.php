@@ -18,6 +18,18 @@
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'id_tipo'); ?>
+		<?php 
+		$list = CHtml::listData(Tipo::model()->findAll(array('order' => 'nome')), 'id', 'nome');
+			echo $form->dropDownList($model, 'id_tipo', $list, array(
+					'prompt' => 'Selecione um tipo'
+			)
+		);
+		?>		
+		<?php echo $form->error($model,'id_tipo'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nome'); ?>
@@ -27,13 +39,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'resumo'); ?>
-		<?php echo $form->textField($model,'resumo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textArea($model,'resumo',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'resumo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'descricao'); ?>
-		<?php echo $form->textField($model,'descricao',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textArea($model,'descricao',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'descricao'); ?>
 	</div>
 
@@ -43,11 +55,7 @@
 		<?php echo $form->error($model,'foto_principal'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'id_tipo'); ?>
-		<?php echo $form->textField($model,'id_tipo'); ?>
-		<?php echo $form->error($model,'id_tipo'); ?>
-	</div>
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
