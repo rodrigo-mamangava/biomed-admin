@@ -23,7 +23,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'url'); ?>
-		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>120)); ?>
+		<?php echo $form->textArea($model,'url',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'descricao'); ?>
+		<?php echo $form->textField($model,'descricao',array('size'=>60,'maxlength'=>255)); ?>
 	</div>
 
 	<div class="row buttons">

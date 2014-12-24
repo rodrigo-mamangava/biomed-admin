@@ -7,6 +7,10 @@
  * @property integer $id
  * @property string $nome
  * @property string $url
+ * @property string $descricao
+ *
+ * The followings are the available model relations:
+ * @property Produto[] $produtos
  */
 class Exame extends CActiveRecord
 {
@@ -28,10 +32,10 @@ class Exame extends CActiveRecord
 		return array(
 			array('nome, url', 'required'),
 			array('nome', 'length', 'max'=>100),
-			array('url', 'length', 'max'=>120),
+			array('descricao', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, nome, url', 'safe', 'on'=>'search'),
+			array('id, nome, url, descricao', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -43,6 +47,7 @@ class Exame extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'produtos' => array(self::HAS_MANY, 'Produto', 'id_exame'),
 		);
 	}
 
@@ -55,6 +60,7 @@ class Exame extends CActiveRecord
 			'id' => 'ID',
 			'nome' => 'Nome',
 			'url' => 'Url',
+			'descricao' => 'Descricao',
 		);
 	}
 
@@ -79,6 +85,7 @@ class Exame extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('nome',$this->nome,true);
 		$criteria->compare('url',$this->url,true);
+		$criteria->compare('descricao',$this->descricao,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -4,6 +4,9 @@
 /* @var $form CActiveForm */
 ?>
 
+<?php 
+?>
+
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -26,10 +29,30 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'url'); ?>
-		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>120)); ?>
+		<?php echo $form->labelEx($model,'url'); ?>		
+		<?php echo $form->textField($model,'url'); ?>
 		<?php echo $form->error($model,'url'); ?>
+		
 	</div>
+	
+	<div class="row">
+	<?php echo $form->labelEx($model,'url'); ?>	
+	<?php 
+	$this->widget('ext.niceditor.nicEditorWidget',array(
+			"model"=>$model,                // Data-Model
+			"attribute"=>'descricao',        // Attribute in the Data-Model
+			"defaultValue"=>'Descrição da página',
+			"config"=>array("maxHeight"=>"200px"),
+			//"width"=>"400px",       // Optional default to 100%
+			//"height"=>"200px",      // Optional default to 150px
+	));
+	?>
+	<?php echo $form->error($model,'url'); ?>
+	</div>
+
+
+	
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

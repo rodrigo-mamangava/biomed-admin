@@ -26,7 +26,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'1234',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			//'ipFilters'=>array('127.0.0.1','::1'),
 		),
 
 	),
@@ -50,9 +50,9 @@ return array(
 				array('api/delete', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'DELETE'),
 				array('api/create', 'pattern'=>'api/<model:\w+>', 'verb'=>'POST'),
 				// Other controllers
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+// 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+// 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+// 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				
 			),
 		),
