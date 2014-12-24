@@ -4,15 +4,15 @@
     <head>
         <title>Admin Home Page</title>
         <!-- Bootstrap -->
-        <link href="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-        <link href="<?php echo Yii::app()->request->baseUrl; ?>/vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
-        <link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/styles.css" rel="stylesheet" media="screen">
+        <link href="<?php echo Yii::app()->baseUrl; ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="<?php echo Yii::app()->baseUrl; ?>/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <link href="<?php echo Yii::app()->baseUrl; ?>/vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+        <link href="<?php echo Yii::app()->baseUrl; ?>/assets/styles.css" rel="stylesheet" media="screen">
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     
     <body>
@@ -42,48 +42,14 @@
                             </li>
                         </ul>
                         <ul class="nav">
-                            <li class="active">
-                                <a href="#">Resumo geral</a>
+                            <li >
+                                <?php echo CHtml::link('Resumo geral',array('admin/index')); ?>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Gerenciar páginas<b class="caret"></b>
-
-                                </a>
-                                <ul class="dropdown-menu" id="menu1">
-  
-                                    <li>
-                                        <a href="#">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Empresa</a>
-                                    </li>
-<!--                                     <li class="divider"></li> -->
-                                    <li>
-                                        <a href="#">Suporte</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Eventos</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Fale conosco</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Trabalhe conosco</a>
-                                    </li>
-                                </ul>
+                            <li >
+                                <?php echo CHtml::link('Gerenciar páginas',array('paginas/index')); ?>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Configurações<i class="caret"></i>
-
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a tabindex="-1" href="#">SEO</a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="-1" href="#">Usuários</a>
-                                    </li>
-                                </ul>
+                            <li>
+								<?php echo CHtml::link('Configurações',array('configuracoes/index')); ?>
                             </li>
                         </ul>
                     </div>
@@ -95,20 +61,17 @@
             <div class="row-fluid">
                 <div class="span3" id="sidebar">
                     <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
-                        <li class="active">
-                            <?php echo CHtml::link('Exames',array('exame/index')); ?>
-                        </li>
                         <li >
-                            <?php echo CHtml::link('Equipamentos',array('exame/index')); ?>
+                            <?php echo CHtml::link('Exames',array('exame/admin')); ?>
                         </li>
                         <li>
-                            <?php echo CHtml::link('Acessórios',array('exame/index')); ?>
+                            <?php echo CHtml::link('Produtos',array('produto/admin')); ?>
                         </li>
                         <li>
-                            <?php echo CHtml::link('Categorias',array('exame/index')); ?>
+                            <?php echo CHtml::link('Categorias',array('categoria/admin')); ?>
                         </li>
                         <li>
-                            <?php echo CHtml::link('Modelos',array('exame/index')); ?>
+                            <?php echo CHtml::link('Modelos',array('modelo/admin')); ?>
                         </li>                   
                     </ul>
                 </div>
@@ -147,10 +110,10 @@
             </footer>
         </div>
         <!--/.fluid-container-->
-        <script src="vendors/jquery-1.9.1.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
-        <script src="assets/scripts.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/vendors/jquery-1.9.1.min.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/vendors/easypiechart/jquery.easy-pie-chart.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/assets/scripts.js"></script>
         <script>
         $(function() {
             // Easy pie charts

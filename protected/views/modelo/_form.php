@@ -1,13 +1,13 @@
 <?php
-/* @var $this ExameController */
-/* @var $model Exame */
+/* @var $this ModeloController */
+/* @var $model Modelo */
 /* @var $form CActiveForm */
 ?>
 
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'exame-form',
+	'id'=>'modelo-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
@@ -21,28 +21,32 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nome'); ?>
-		<?php echo $form->textField($model,'nome',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'nome',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'nome'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'url'); ?>
-		<?php echo $form->textField($model,'url', array()); ?>
-		<?php echo $form->error($model,'url'); ?>
+		<?php echo $form->labelEx($model,'resumo'); ?>
+		<?php echo $form->textField($model,'resumo',array('size'=>25,'maxlength'=>25)); ?>
+		<?php echo $form->error($model,'resumo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'descricao'); ?>
-		<?php 
-		$this->widget('ext.niceditor.nicEditorWidget',array(
-				"model"=>$model,                // Data-Model
-				"attribute"=>'descricao',        // Attribute in the Data-Model
-// 				"defaultValue"=>'defaultValue text here',
-				"config"=>array("maxHeight"=>"200px"),
-
-		));
-		?>
+		<?php echo $form->textArea($model,'descricao',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'descricao'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'id_foto_modelo'); ?>
+		<?php echo $form->textField($model,'id_foto_modelo'); ?>
+		<?php echo $form->error($model,'id_foto_modelo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'id_produto'); ?>
+		<?php echo $form->textField($model,'id_produto'); ?>
+		<?php echo $form->error($model,'id_produto'); ?>
 	</div>
 
 	<div class="row buttons">

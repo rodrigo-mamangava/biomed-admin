@@ -1,25 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "exame".
+ * This is the model class for table "foto_modelo".
  *
- * The followings are the available columns in table 'exame':
+ * The followings are the available columns in table 'foto_modelo':
  * @property integer $id
  * @property string $nome
- * @property string $url
  * @property string $descricao
+ * @property string $url
  *
  * The followings are the available model relations:
- * @property ProdutoExame[] $produtoExames
+ * @property Modelo[] $modelos
  */
-class Exame extends CActiveRecord
+class FotoModelo extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'exame';
+		return 'foto_modelo';
 	}
 
 	/**
@@ -31,11 +31,11 @@ class Exame extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nome, url', 'required'),
-			array('nome', 'length', 'max'=>100),
+			array('nome', 'length', 'max'=>45),
 			array('descricao', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, nome, url, descricao', 'safe', 'on'=>'search'),
+			array('id, nome, descricao, url', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,7 +47,7 @@ class Exame extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'produtoExames' => array(self::HAS_MANY, 'ProdutoExame', 'id_exame'),
+			'modelos' => array(self::HAS_MANY, 'Modelo', 'id_foto_modelo'),
 		);
 	}
 
@@ -59,8 +59,8 @@ class Exame extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'nome' => 'Nome',
-			'url' => 'Url',
 			'descricao' => 'Descricao',
+			'url' => 'Url',
 		);
 	}
 
@@ -84,8 +84,8 @@ class Exame extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('nome',$this->nome,true);
-		$criteria->compare('url',$this->url,true);
 		$criteria->compare('descricao',$this->descricao,true);
+		$criteria->compare('url',$this->url,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -96,7 +96,7 @@ class Exame extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Exame the static model class
+	 * @return FotoModelo the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

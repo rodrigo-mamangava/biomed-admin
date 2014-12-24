@@ -1,6 +1,6 @@
 <?php
 
-class ExameController extends Controller
+class ModeloController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -15,7 +15,7 @@ class ExameController extends Controller
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
-			//'postOnly + delete', // we only allow deletion via POST request
+			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -62,14 +62,14 @@ class ExameController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Exame;
+		$model=new Modelo;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Exame']))
+		if(isset($_POST['Modelo']))
 		{
-			$model->attributes=$_POST['Exame'];
+			$model->attributes=$_POST['Modelo'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -91,9 +91,9 @@ class ExameController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Exame']))
+		if(isset($_POST['Modelo']))
 		{
-			$model->attributes=$_POST['Exame'];
+			$model->attributes=$_POST['Modelo'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -122,7 +122,7 @@ class ExameController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Exame');
+		$dataProvider=new CActiveDataProvider('Modelo');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +133,10 @@ class ExameController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Exame('search');
+		$model=new Modelo('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Exame']))
-			$model->attributes=$_GET['Exame'];
+		if(isset($_GET['Modelo']))
+			$model->attributes=$_GET['Modelo'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +147,12 @@ class ExameController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Exame the loaded model
+	 * @return Modelo the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Exame::model()->findByPk($id);
+		$model=Modelo::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,11 +160,11 @@ class ExameController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Exame $model the model to be validated
+	 * @param Modelo $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='exame-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='modelo-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
