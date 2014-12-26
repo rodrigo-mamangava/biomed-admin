@@ -63,12 +63,12 @@
                     <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
                         <li >
                             <?php echo CHtml::link('Exames',array('exame/admin')); ?>
+                        </li>                        
+                        <li>
+                            <?php echo CHtml::link('Categorias',array('categoria/admin')); ?>
                         </li>
                         <li>
                             <?php echo CHtml::link('Produtos',array('produto/admin')); ?>
-                        </li>
-                        <li>
-                            <?php echo CHtml::link('Categorias',array('categoria/admin')); ?>
                         </li>
                         <li>
                             <?php echo CHtml::link('Modelos',array('modelo/admin')); ?>

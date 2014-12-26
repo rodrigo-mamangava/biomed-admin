@@ -17,7 +17,7 @@
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<?php echo $form->errorSummary($model, $modelPE); ?>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'id_tipo'); ?>
@@ -27,6 +27,25 @@
 					'prompt' => 'Selecione um tipo'
 			)
 		);
+		?>		
+		<?php echo $form->error($model,'id_tipo'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($modelPE,'id_exame'); ?>
+		<?php 
+			$listExame = CHtml::listData(Exame::model()->findAll(array('order' => 'nome')), 'id', 'nome');
+			echo $form->dropDownList(
+					$modelPE, 
+					'id_exame', 
+					$listExame, 
+					array(
+						'multiple'=>true
+			)
+		);
+			
+			
+			
 		?>		
 		<?php echo $form->error($model,'id_tipo'); ?>
 	</div>
