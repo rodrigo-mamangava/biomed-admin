@@ -63,19 +63,45 @@ class ProdutoController extends Controller
 	public function actionCreate()
 	{
 		$model=new Produto;
+		$modelPE = new ProdutoExame();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Produto']))
+		if(isset($_POST['Produto'], $_POST['ProdutoExame']) )
 		{
-			$model->attributes=$_POST['Produto'];
-			if($model->save())
+			$model->attributes=$_POST['Produto'];			
+			$modelPE->attributes = $_POST['ProdutoExame'];
+			
+			
+			
+			if($model->save()){
+								
+				foreach ($modelPE->attributes["id_exame"] as $relcao){
+					
+					$modelProdutoExame = new ProdutoExame();
+					
+					$dados ["id_exame"] = $relcao;
+					$dados ["id_produto"] = $model->id;
+					
+					$modelProdutoExame->attributes = $dados;
+					
+					$modelProdutoExame->save();
+					
+
+				}
+				
+
 				$this->redirect(array('view','id'=>$model->id));
+				
+				
+			}
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
+				
+			'modelPE'=>$modelPE,
 		));
 	}
 
@@ -87,6 +113,15 @@ class ProdutoController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+		$modelPE = new ProdutoExame;
+		$listaExames= ProdutoExame::model()->findAllByAttributes(array('id_produto'=>$id), array('select'=>'id_exame') );
+		
+// 		print_r('<pre>');
+// 		print_r($modelPE);
+// 		print_r('<pre>');
+		
+// 		exit;
+		
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -95,11 +130,29 @@ class ProdutoController extends Controller
 		{
 			$model->attributes=$_POST['Produto'];
 			if($model->save())
+				
+				foreach ($modelPE->attributes["id_exame"] as $relcao){
+						
+					$modelProdutoExame = new ProdutoExame();
+						
+					$dados ["id_exame"] = $relcao;
+					$dados ["id_produto"] = $model->id;
+						
+					$modelProdutoExame->attributes = $dados;
+						
+					$modelProdutoExame->save();
+						
+				
+				}
+				
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
+			'modelPE'=>$modelPE,
+			'listaExames'=>$listaExames,
+				
 		));
 	}
 

@@ -22,11 +22,22 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'id_tipo'); ?>
 		<?php 
-		$list = CHtml::listData(Tipo::model()->findAll(array('order' => 'nome')), 'id', 'nome');
+		
+		if(!isset($listaExames)){
+			$list = CHtml::listData(Tipo::model()->findAll(array('order' => 'nome')), 'id', 'nome');
 			echo $form->dropDownList($model, 'id_tipo', $list, array(
 					'prompt' => 'Selecione um tipo'
 			)
-		);
+			);
+			
+		}else{
+			$list = CHtml::listData(Tipo::model()->findAll(array('order' => 'nome')), 'id', 'nome');
+			echo $form->dropDownList($model, 'id_tipo', $list, array(
+					'prompt' => 'Selecione um tipo'
+				)
+			);
+			
+		}
 		?>		
 		<?php echo $form->error($model,'id_tipo'); ?>
 	</div>
