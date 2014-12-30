@@ -43,8 +43,9 @@ return array(
             'showScriptName'=>false,
             'appendParams' => true,
 			'rules'=>array(
+				'home' => 'site/index',
 				'empresa' => 'site/empresa',
-				'produto/<produto:\[\w\-]+>' => 'site/produto',
+				'produto/<produto:[\w\-]+>' => 'site/produto',
 				'suporte' => 'site/suporte',
 				'eventos' => 'site/eventos',
 				'fale-conosco' => 'site/faleConosco',

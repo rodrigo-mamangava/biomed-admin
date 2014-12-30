@@ -68,7 +68,7 @@
                             <?php echo CHtml::link('Categorias',array('categoria/admin')); ?>
                         </li>
                         <li>
-                            <?php echo CHtml::link('Produtos',array('produto/admin')); ?>
+                            <a href="<?php echo Yii::app()->createUrl("admin/produto")?>">Produtos</a>
                         </li>
                         <li>
                             <?php echo CHtml::link('Modelos',array('modelo/admin')); ?>
