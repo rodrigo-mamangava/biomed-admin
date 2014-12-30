@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Biomed - Admin',
-	'defaultController' => 'admin',
+// 	'defaultController' => 'admin',
 	'language'=>'pt_br',
 
 	// preloading 'log' component
@@ -38,10 +38,17 @@ return array(
 		),
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
+// 			'class' => 'UrlManager',
             'urlFormat'=>'path',
             'showScriptName'=>false,
             'appendParams' => true,
 			'rules'=>array(
+				'empresa' => 'site/empresa',
+				'produto/<produto:\[\w\-]+>' => 'site/produto',
+				'suporte' => 'site/suporte',
+				'eventos' => 'site/eventos',
+				'fale-conosco' => 'site/faleConosco',
+				'trabalhe-conosco' => 'site/trabalheConosco',				
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -69,11 +76,9 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
-				array(
-					'class'=>'CWebLogRoute',
-				),
-				*/
+// 				array(
+// 					'class'=>'CWebLogRoute',
+// 				),
 			),
 		),
 	),

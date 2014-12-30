@@ -1,85 +1,750 @@
 @import "bootstrap.less";
-
-/*customize variants*/
-
 @border-radius-menu: 0px;
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-header{
-	
+body {
+	font-family: @font-lato;
+	border-top: solid 5px @azul-claro;
 }
 
-.barra-local{
-	
-	.nome-pagina{
+header.container {
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h2{
+	font-size: 1.7em;
+	line-height: 1.4em;
+	color: @azul-claro;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+h3{
+	font-size: 1.1em;
+	line-height: 1.5em;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	color:@azul-claro;
+}
+
+p{
+	font-size: 1.3em;
+	color: @cinza-escuro;
+	line-height: 1.7em;
+}
+
+
+
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	border-top: 1px solid @cinza-escuro;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: @cinza-medio;
+  outline: 0;
+  outline: 0;
+  /* IE6-9 */
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+	.form-simples {
+		.campo {			
+			input{
+				margin-top: 10px;
+			}			
+		}
+
+		.btn-enivar {
+				margin-top: 6.1px;			
+		}
+		
+		::-webkit-input-placeholder {
+		 font-size: 1.7em;
+		}
+		:-moz-placeholder { /* older Firefox*/
+		 font-size:1.7em;
+		}
+		::-moz-placeholder { /* Firefox 19+ */ 
+		 font-size: 1.7em;
+		} 
+		:-ms-input-placeholder { 
+		 font-size: 1.7em; 
+		}
+		
+		
+	}
+
+
+
+
+
+.passador{
+	.center-block;
+	.text-center;
+}
+
+.navbar-collapse {
+	.navbar-form {
+		width: 100%;
+	}
+}
+
+.btn-enivar {
+	a {
+		.btn;
+		.btn-sm;
+		.button-variant (white;
+		transparent;
+		white);
+		border-radius: 0px;
+		border-right: 0;
+		border-left: 0;
+		font-size: 1em;
+		line-height: 1.4em;
+		width: 300px;
+		margin-top: 10px;
+	}
+}
+
+.btn-saiba-mais {
+	.btn;
+	.button-variant (@azul-claro;
+	transparent;
+	@azul-claro);
+	border-radius: 0px;
+}
+
+.btn-orcamento {
+	.btn;
+	.button-variant (@azul-claro;
+	transparent;
+	@azul-claro);
+	border-radius: 0px;
+	width: 100%;
+}
+
+
+	.navbar {
+//		min-height: 145px;
+//		margin-bottom: 33px;
+		padding-top: 5px;
+//		position: relative;
+//		& > .container-fluid {
+//			margin-top: 100px;
+//		}
+	}
+
+header {
+	.navbar-nav {
+		& > li {
+			z-index: 2;
+		}
+	}
+
+	.menu-padrao {
+		& > li {
+			z-index: 1;
+		}
+	}
+
+	.form-buscar {
+		input {
+			border: 0px;
+			border-top: 1px solid #cccccc;
+			border-bottom: 1px solid #cccccc;
+			border-left: 1px solid #cccccc;
+		}
+
+		.btn-find {
+			border-left: 0px;
+		}
+	}
+
+	.btn-find {
+	}
+}
+
+.barra-local {
+	border-bottom: solid 1px @cinza-escuro;
+	color: @azul-claro;
+	h1{
+		margin-top: 0px;
+		margin-bottom: 25px;
+		font-size: 1.7em;
+		line-height: 1.4em;
+	}
+	.nome-pagina {
 		.text-left;
 	}
-		
-	.migalha{
-		.text-right;		
-	}
 
-}
-
-footer{
-	.sessao-footer{
-		h4{
-			border-bottom: solid 1px;
+	.migalha {
+		.text-right;
+		p{
+			color: @azul-claro;
+			font-size: 0.9em;
+			line-height: 1.6em;			
 		}
 	}
 }
 
+.menu-lateral {
+	margin-top: 20px;
+	.lista-menu {
+		p {
+		}
 
+		ul {
+			list-style-type: none;
+			padding-left: 0px;
+			li {
+			}
+		}
+	}
+}
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-	
-	header{
-		.navbar-default {	
-		padding-top: 70px;
+footer {
+	margin-top: 65px;
+	padding-top: 55px;
+	padding-bottom: 55px;
+	border-top: solid 1px black;
+	background-color: @cinza-claro;
+	font-size: 0.9em;
+	line-height: 1.6em;
+	.sessao-footer {
+		.titulo-footer {
+			border-bottom: solid 1px;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			.text-uppercase;
+		}
+	}
+}
+
+.img-destaque-home {
+	background-color: @cinza-claro;
+	.jumbotron {
+		background-color: transparent;
+		border-radius: 0px;
+		margin-bottom: 0px;
+		background-image: url('../img/lgm/banner-home-480x150.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: 150px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+}
+
+.divisoria-tipo-01 {
+	margin-top: 90px;
+	margin-bottom: 60px;
+	p {
+		.text-uppercase;
+		.text-center;
+		font-size: 1.2em;
+		line-height:1.4em;
 		
-		.navbar-collapse{
-			.navbar-nav{
-				&>li{
-					margin: 0 3px;
+	}
+
+	.col-esq {
+		border-right: solid 1px @cinza-claro;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.col-dir {
+		border-left: solid 1px @cinza-claro;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.vitrine-tipo-home {
+	.text-center;
+	padding-top: 30px;
+	margin-bottom: 40px;
+	.carousel {
+		.carousel-inner {
+			.item {
+			}
+		}
+
+		.carousel-control {
+			background-image: none;
+			.glyphicon-chevron-left {
+				margin-left: -100px;
+			}
+
+			.glyphicon-chevron-right {
+				margin-right: -100px;
+			}
+		}
+	}
+
+	.thumbnail {
+		border: 0;
+		margin-bottom: 0px;
+		padding: 0 2px;
+		img {
+			height: 160px;
+			width: 242px;
+		}
+	}
+}
+
+.titulo-form-simples {
+	.text-center;
+	margin-top: 90px;
+	margin-bottom: 40px;
+	
+	p{
+		font-size: 2.7em;
+		line-height: 1.3em;
+	}
+		
+}
+
+.form-simples {
+	background-color: @azul-claro;
+	vertical-align: middle;
+	min-height: 60px;
+	.text-center;
+	
+	.form-simples {
+		.campo {
+			.text-right;
+			
+			input{
+//				margin-top: 15px;
+				
+			}			
+		}
+
+		.btn-enivar {
+			.text-left;
+		}
+	}
+	
+	
+	.campo {
+		input {
+//			padding: 5px 10px;
+			background-color: transparent;
+			border: 0;
+			width: 265px;
+			height: 40px;
+			color: white;
+			.placeholder (white);
+			input::-webkit-input-placeholder { font-size: 1.7em; }
+			input::-moz-placeholder { font-size: 1.7em; }
+			input:-ms-input-placeholder { font-size: 1.7em; }
+			input:-moz-placeholder { font-size: 1.7em }
+			line-height: 1.4em;
+			font-size: 1.7em;
+		}
+	}
+}
+
+.vitrine-parceiros {
+	padding-top: 5px;
+	.center-block;
+	.text-center;
+	img.logo-parceiros {
+		height: 40px;
+	}
+}
+
+.barra-local {
+	vertical-align: text-bottom;
+	h1 {
+		.text-left;
+	}
+
+	.migalha p {
+		.text-right;
+		margin: 9px 0 0;
+
+		
+	}
+}
+
+.h4-interno{
+	color: @azul-escuro;
+	font-size: 1.7em;
+}
+
+
+.box-02-titulo{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	.texto-box-02{
+		h4{
+			.h4-interno;
+		}
+	}
+}
+
+.box-03-titulo {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	.titulo-box-03 {
+		.text-center;
+		margin-bottom: 40px;
+		h3 {
+			color: @laranja;
+			font-size: 2.7em;
+			line-height: 1.3em;
+			margin-top: 0;
+
+			
+		}
+	}
+
+	.texto-box-03 {
+		p {
+		}
+	}
+}
+
+.mapa-suporte-tec {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	.lista-hospital {
+		padding-top: 10px;
+		.nome-estado {
+			.text-capitalize;
+			color: @azul-escuro;
+			border-top: solid black 1px;
+			border-bottom: solid black 1px;
+			line-height: 1.5em;
+		}
+
+		.local {
+		}
+	}
+}
+
+.box-02 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.biomed-logo {
+	content: url("../img/lgm/biomed-logo-480.png");
+}
+
+@media (max-width: @screen-xs-max) {
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+@media (min-width: @screen-sm-min) {
+	.row {
+	}
+
+	header {
+		.navbar-brand {
+			padding-top: 0px;
+		}
+
+		.navbar-nav {
+			.text-uppercase;
+			font-size: 1.0em;
+			line-height: 1.4em;
+			& > li > a {
+				padding-top: 0px;
+			}
+		}
+
+		.navbar-default .navbar-nav > .open > a , .navbar-default .navbar-nav > .open > a:hover , .navbar-default .navbar-nav > .open > a:focus {
+			background-color: transparent;
+			color: #005596;
+			border-left: solid 1px @azul-escuro;
+		}
+
+		.menu-padrao {
+			font-size: 1em;
+			line-height: 1.4em;
+			border: 0;
+			border-radius: 0px;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			border-left: solid 1px @azul-escuro;
+			text-transform: initial;
+			margin-top: -18px ! important;
+			padding-top: 0;
+			padding-bottom: 0;
+			div  {
+				
+				margin: 10px 0;
+				padding-left: 15px;
+				
+				&:first-child {
+					margin-top: 25px;
+				}
+
+				&:last-child {
+					margin-bottom: 25px;
+				}
+
+				& > a {
+					color: @azul-claro;
+					padding: 3px 15px;
+					padding-top: 0px;
 				}
 			}
 		}
-		
-		.container-fluid{
-			padding-left: 0;
-			padding-right: 0;
-		}
-		
-		ul{
-			.navbar-form{
-				.input-group{
-					.form-control{
+
+		.navbar-default {
+			.navbar-collapse {
+				.navbar-nav {
+					& > li {
+						margin: 0 0 0 7.4px;
+						.center-block;
+						.text-center;
+					}
+				}
+			}
+
+			.container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			ul {
+				.navbar-form {
+					margin-top: 0px;
+					.input-group {
+						.form-control {
+							border-radius: @border-radius-menu;
+						}
+					}
+
+					button {
 						border-radius: @border-radius-menu;
 					}
 				}
-				button{
-					border-radius: @border-radius-menu;
+			}
+		}
+	}
+
+	.img-destaque-home {
+		.jumbotron {
+			width: @container-sm;
+			background-size: cover;
+		}
+	}
+}
+
+.menu-lateral {
+	.lista-menu {
+	}
+}
+
+.catalogo {
+	.lista-equip {
+		.item-equip {
+		}
+	}
+}
+
+.vitrine-acess {
+	.linha-acess {
+		.item-acess {
+		}
+	}
+}
+
+.acessorio {
+	.acessorio-descricao {
+		.info-acess {
+			h1 {
+			}
+		}
+	}
+}
+
+.lista-modelos {
+	.texto-descritivo-modelo {
+		p {
+			border-bottom: solid 1px @cinza-escuro;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+}
+
+footer {
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: @screen-md-min) {
+	
+	.navbar {
+//		min-height: 145px;
+//		margin-bottom: 33px;
+		padding-top: 80px;
+//		position: relative;
+//		& > .container-fluid {
+//			margin-top: 100px;
+//		}
+	}
+	
+	.img-destaque-home {
+		.jumbotron {
+		}
+	}
+
+	header {
+		.navbar-default {
+			.navbar-collapse {
+				.navbar-nav {
+					& > li {
+						margin: 0 0 0 -15px;
+					}
 				}
 			}
 		}
-		
-	}
-		
-	} 
-}
 
-	footer{
-		.container-fluid{
-			padding-left: 0;
-			padding-right: 0;
+		.navbar-nav {
+			.text-uppercase;
+			font-size: 1.0em;
+			line-height: 1.4em;
+//			margin-top: 25px;
+		}
+
+		.menu-padrao {
+			font-size: 1em;
+			line-height: 1.4em;
+			& > li {
+				& > a {
+					line-height: 1.9em;
+				}
+			}
+		}
+
+		.navbar-default {
+			.navbar-collapse {
+				.navbar-form {
+					width: 170px;
+					margin-top: -7px;
+				}
+			}
 		}
 	}
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { }
+	.img-destaque-home {
+		.jumbotron {
+			background-image: url('../img/lgm/banner-home-768x200.png');
+			width: @container-md;
+			background-size: cover;
+			height: 200px;
+		}
+	}
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { }
+	.form-simples {
+		.campo {
+			.text-right;
+		}
+
+		.btn-enivar {
+			.text-left;
+		}
+	}
+
+	.biomed-logo {
+		content: url("../img/lgm/biomed-logo-768.png");
+	}
+}
+
+@media (min-width: @screen-lg-min) {
+	.navbar {
+		min-height: 145px;
+		margin-bottom: 38px;
+		padding-top: 100px;
+		position: relative;
+
+		& > .container-fluid {
+			margin-top: 100px;
+		}
+	}
+
+	header {
+		.navbar-default {
+			.navbar-collapse {
+				.navbar-nav {
+					font-size: 1em;
+					line-height: 1.4em;
+					margin-top: 25px;
+					& > li {
+						margin: 0 0 0 15px;
+					}
+				}
+			}
+
+			.navbar-collapse {
+				.navbar-form {
+					width: 240px;
+					margin-top: -7px;
+				}
+			}
+		}
+
+		.menu-padrao {
+			font-size: 1em;
+			line-height: 1.4em;
+		}
+	}
+
+	.img-destaque-home {
+		.jumbotron {
+			background-image: url('../img/lgm/banner-home-1080x285.png');
+			width: @container-lg;
+			background-size: cover;
+			height: 285px;
+			padding-left: @padding-base-horizontal;
+			padding-right: 15px;
+		}
+	}
+
+	.biomed-logo {
+		content: url("../img/lgm/biomed-logo-1200.png");
+	}
+}
+

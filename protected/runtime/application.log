@@ -12463,3 +12463,671 @@ REQUEST_URI=/biomed-admin/produto/create
 in C:\xampp\htdocs\biomed-admin\protected\views\produto\_form.php (26)
 in C:\xampp\htdocs\biomed-admin\protected\views\produto\create.php (18)
 in C:\xampp\htdocs\biomed-admin\protected\controllers\ProdutoController.php (105)
+2014/12/30 01:57:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "catalogo.php".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogo.php')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/catalogo.php?exame=Encefalografia
+HTTP_REFERER=http://127.0.0.1/biomed-admin/
+---
+2014/12/30 02:13:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "produto" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('produto')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('produto')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/produto')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/admin/produto
+---
+2014/12/30 02:15:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "trabalhe-conosco".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('trabalhe-conosc...')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/trabalhe-conosco
+---
+2014/12/30 02:32:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "empresa".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('empresa')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/empresa
+HTTP_REFERER=http://127.0.0.1/biomed-admin/
+---
+2014/12/30 02:36:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "suporte".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('suporte')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/suporte
+HTTP_REFERER=http://127.0.0.1/biomed-admin/empresa
+---
+2014/12/30 02:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "evento".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('evento')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/evento
+HTTP_REFERER=http://127.0.0.1/biomed-admin/suporte
+---
+2014/12/30 02:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "evento".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('evento')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/evento
+HTTP_REFERER=http://127.0.0.1/biomed-admin/suporte
+---
+2014/12/30 02:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "catalogo.php".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogo.php')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/catalogo.php?exame=Encefalografia
+HTTP_REFERER=http://127.0.0.1/biomed-admin/suporte
+---
+2014/12/30 02:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "asd" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('asd')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('asd')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/asd')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/asd
+HTTP_REFERER=http://127.0.0.1/biomed-admin/suporte
+---
+2014/12/30 02:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "Encefalografia" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('Encefalografia')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('Encefalografia')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/Encefal...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/Encefalografia
+HTTP_REFERER=http://127.0.0.1/biomed-admin/suporte
+---
+2014/12/30 02:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "Encefalografia" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('Encefalografia')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('Encefalografia')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/Encefal...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/Encefalografia
+HTTP_REFERER=http://127.0.0.1/biomed-admin/produto
+---
+2014/12/30 02:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "produto" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('produto')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('produto')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/produto...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/produto/asd
+HTTP_REFERER=http://127.0.0.1/biomed-admin/produto/Encefalografia
+---
+2014/12/30 02:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "produto" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('produto')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('produto')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/produto...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/produto/novo-exame
+HTTP_REFERER=http://127.0.0.1/biomed-admin/produto/Encefalografia
+---
+2014/12/30 02:53:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "produto" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('produto')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('produto')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/produto...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/produto/Encefalografia
+HTTP_REFERER=http://127.0.0.1/biomed-admin/produto/Encefalografia
+---
+2014/12/30 02:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "produto" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('produto')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('produto')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/produto...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/produto/Encefalografia
+HTTP_REFERER=http://127.0.0.1/biomed-admin/produto/Encefalografia
+---
+2014/12/30 02:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "novo-exame" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('novo-exame')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('novo-exame')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/novo-ex...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/novo-exame
+HTTP_REFERER=http://127.0.0.1/biomed-admin/
+---
+2014/12/30 02:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "Encefalografia".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('Encefalografia')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/Encefalografia
+HTTP_REFERER=http://127.0.0.1/biomed-admin/empresa
+---
+2014/12/30 02:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "novo-exame" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('novo-exame')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('novo-exame')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/novo-ex...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/novo-exame
+HTTP_REFERER=http://127.0.0.1/biomed-admin/produto/asd
+---
+2014/12/30 02:59:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "index.php" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/index.p...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/index.php
+HTTP_REFERER=http://127.0.0.1/biomed-admin/produto/empresa
+---
+2014/12/30 03:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-01.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-02.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-04.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/logo/p...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/logo/primeiro.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-03.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-01.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-03.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-04.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/logo/p...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/logo/primeiro.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-02.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-02.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-03.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/logo/p...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/logo/primeiro.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-01.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-04.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-04.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-03.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-02.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/logo/p...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/logo/primeiro.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-01.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:08:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/logo/p...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/logo/primeiro.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:08:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-04.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:08:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-03.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:08:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-02.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:08:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/equip/...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/img/equip/item-01.jpg
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/index
+---
+2014/12/30 03:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "novo-exame" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('novo-exame')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('novo-exame')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/novo-ex...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/novo-exame
+HTTP_REFERER=http://127.0.0.1/biomed-admin/suporte
+---
+2014/12/30 03:14:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "model/listExamesMenu.php".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('model/listExame...')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/biomed-admin/model/listExamesMenu.php
+HTTP_REFERER=http://127.0.0.1/biomed-admin/
+---
+2014/12/30 03:21:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "novo-exame" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('novo-exame')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('novo-exame')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/novo-ex...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/novo-exame
+HTTP_REFERER=http://127.0.0.1/biomed-admin/
+---
+2014/12/30 03:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "login" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/login
+HTTP_REFERER=http://127.0.0.1/biomed-admin/paginas/index
+---
+2014/12/30 03:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "login" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/login
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/login
+---
+2014/12/30 03:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "login" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/login
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/login
+---
+2014/12/30 03:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "login" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/login
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/login
+---
+2014/12/30 03:21:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "login" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/login
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/login
+---
+2014/12/30 03:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "login" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/login
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/login
+---
+2014/12/30 03:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CUrlManager.php:374
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\components\UrlManager.php(19): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(140): UrlManager->parseUrl(Object(CHttpRequest))
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/biomed-admin/
+---
+2014/12/30 03:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CUrlManager.php:374
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\components\UrlManager.php(19): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(140): UrlManager->parseUrl(Object(CHttpRequest))
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/biomed-admin/
+---
+2014/12/30 03:25:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CUrlManager.php:374
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\components\UrlManager.php(19): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(140): UrlManager->parseUrl(Object(CHttpRequest))
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/biomed-admin/
+---
+2014/12/30 03:25:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "login" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/login/
+HTTP_REFERER=http://127.0.0.1/biomed-admin/
+---
+2014/12/30 03:25:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "login" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/site/login/
+HTTP_REFERER=http://127.0.0.1/biomed-admin/site/login/
+---
+2014/12/30 03:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CUrlManager.php:374
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\components\UrlManager.php(19): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(140): UrlManager->parseUrl(Object(CHttpRequest))
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/biomed-admin/
+---
+2014/12/30 03:25:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "index".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CUrlManager.php:374
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\components\UrlManager.php(19): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(140): UrlManager->parseUrl(Object(CHttpRequest))
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/biomed-admin/index
+---
+2014/12/30 03:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "novoExame" solicitada.' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('novoExame')
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('novoExame')
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('produto/novoExa...')
+#3 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/biomed-admin/produto/novo-exame
+HTTP_REFERER=http://127.0.0.1/biomed-admin/empresa
+---
+2014/12/30 03:27:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "produto/novo-exame".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CUrlManager.php:374
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\components\UrlManager.php(19): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(140): UrlManager->parseUrl(Object(CHttpRequest))
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/biomed-admin/produto/novo-exame
+---
+2014/12/30 03:27:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "produto/novo-exame".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CUrlManager.php:374
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\components\UrlManager.php(19): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(140): UrlManager->parseUrl(Object(CHttpRequest))
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/biomed-admin/produto/novo-exame
+---
+2014/12/30 03:27:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "".' in C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CUrlManager.php:374
+Stack trace:
+#0 C:\xampp\htdocs\biomed-admin\protected\components\UrlManager.php(19): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\web\CWebApplication.php(140): UrlManager->parseUrl(Object(CHttpRequest))
+#2 C:\xampp\htdocs\biomed-admin\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\biomed-admin\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/biomed-admin/
+---
